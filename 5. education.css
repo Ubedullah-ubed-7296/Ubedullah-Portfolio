@@ -1,0 +1,129 @@
+.education-container h1 {
+    margin: 12px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+.education-container h1 span {
+    color: #59b2f4;
+}
+
+.qoute {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.box {
+    width: 100%;
+    max-width: 600px;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%;
+    height: 105px;
+    border-radius: 10px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h3 {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.content p {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(0, 44, 139);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.content a:active {
+    color: red;
+}
+
+.content h4 {
+    font-size: 1em;
+    margin-top: 10px;
+    color: rgb(34, 109, 0);
+}
+
+@media (min-width: 769px) {
+    .box {
+        flex-direction: row;
+    }
+
+    .image {
+        flex: 1;
+    }
+
+    .content {
+        flex: 2;
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .image img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .content {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .education-container h1 {
+        font-size: 2rem;
+    }
+    
+    .education-container h1 span {
+        font-size: 2rem;
+    }
+}

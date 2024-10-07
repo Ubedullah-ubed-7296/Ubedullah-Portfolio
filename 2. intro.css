@@ -1,0 +1,95 @@
+/* General Styling */
+.my-home {
+    padding: 50px 0;
+    background-color: #00012b;
+}
+
+.intro-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 80px;
+}
+
+.intro-container h1 {
+    margin: 12px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+.intro-container h1 span {
+    color: #59b2f4;
+}
+
+.intro-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.intro-img {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.intro {
+    flex: 1 1 50%;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .intro-box {
+        flex-direction: column;
+    }
+    
+    .intro {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .intro-img {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro-container h1 {
+        font-size: 2rem;
+    }
+    
+    .intro-container h1 span {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .intro{
+        margin-right: 60px;
+    }
+}

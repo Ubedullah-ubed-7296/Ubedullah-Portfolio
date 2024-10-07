@@ -1,0 +1,121 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px;
+}
+
+.projects-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.projects-container span {
+    color: #59b2f4;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    display: block;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(89, 178, 244, 0.5);
+    color: #fff;
+    padding: 16px 20px 14px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.project-card:hover .project-content {
+    opacity: 1;
+}
+
+.project-content h4,
+.project-content p,
+.project-content a {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-content h4,
+.project-card:hover .project-content p,
+.project-card:hover .project-content a {
+    transform: translateY(0);
+}
+
+.project-content h4 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+}
+
+.project-content p {
+    margin: 0 0 12px;
+    font-size: 0.8rem;
+
+}
+
+.project-content a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.project-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .projects-container h1 {
+        font-size: 2rem;
+    }
+    
+    .projects-container h1 span {
+        font-size: 2rem;
+    }
+}

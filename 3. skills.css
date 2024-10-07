@@ -1,0 +1,131 @@
+.this-skills h1 {
+    margin: 12px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+.this-skills h1 span {
+    color: #59b2f4;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 11%;
+    padding: 16px;
+    box-shadow: 0 0 10px #a9aaab;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    background-color: #0091ff;
+    box-shadow: 0 0 20px #0091ff;
+}
+
+.skills-container .skill-card img {
+    height: 80px;
+    width: 80px;
+}
+
+.skills-container .skill-card p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 991px) {
+  
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 24%;
+      height: 120px;
+      padding: 0px;
+    }
+  
+    .skills-container .skill-card img {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .skills-container .skill-card p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+  
+    #skills {
+      padding: 10px;
+    }
+  
+    .skills-container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 30px;
+      gap: 30px;
+    }
+  
+    .skill-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      height: 110px;
+      padding: 0px;
+    }
+  
+    .skills-container .skill-card img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .skills-container .skill-card p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+}  
+
+
+@media screen and (max-width: 500px) {
+  .this-skills h1 {
+      font-size: 2rem;
+  }
+  
+  .this-skills h1 span {
+      font-size: 2rem;
+  }
+}

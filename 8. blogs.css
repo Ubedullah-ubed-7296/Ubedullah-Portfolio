@@ -1,0 +1,96 @@
+.container-blogger h1{
+    margin: 12px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
+
+.container-blogger h1 span{
+    color: #59b2f4;
+}
+
+.container-blogger {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #00012b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 20px;
+    width: 100%;
+    max-width: 950px;
+}
+
+.blog-card h2{
+    padding-bottom: 20px;
+    color: #c5c5c5;
+    font-size: 1.8rem;
+}
+
+.blog-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    margin: 30px;
+    /* text-align: center; */
+    padding-left: 100px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card {
+    transform: translateY(-10px);
+}
+
+.blog-card p {
+    color: #efefef;
+    font-size: 1.1rem;
+}
+
+
+.blog-card a:hover {
+    background: #2980b9;
+}
+
+.blog-btn{
+    font-size: 14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+    border: 2px solid #59b2f4;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .blog-card {
+        padding: 20px;
+    }
+
+    .blog-card h2 {
+        font-size: 1.5rem; /* Slightly smaller font size for headings */
+    }
+
+    .blog-card p {
+        font-size: 16px; /* Smaller font size for paragraphs */
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .container-blogger h1 {
+        font-size: 2rem;
+    }
+    
+    .container-blogger h1 span {
+        font-size: 2rem;
+    }
+}

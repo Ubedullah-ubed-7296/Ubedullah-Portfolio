@@ -1,0 +1,76 @@
+.certificate-container {
+    justify-content: center;
+    align-items: center;
+    margin: 90px;
+}
+
+.certificate-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding-top: 10px;
+    font-size: 2.5rem;
+}
+
+.certificate-container span {
+    color: #59b2f4;
+}
+
+.certificates{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.certificates img{
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    margin: 0.7rem;
+    border-radius: 10px;
+    border: 2px solid #b08204;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.1s ease-in;
+}
+
+.certificates img:hover{
+    border: 4px solid #b08204;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+@media(min-width: 100px) and (max-width: 500px) {
+    .certificate-container{
+        margin: 40px;
+        margin-right: 20px;
+        margin-left: 22px;
+    }
+
+    .certificate-container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .certificate-container h1 {
+        font-size: 2rem;
+    }
+    
+    .certificate-container h1 span {
+        font-size: 2rem;
+    }
+}

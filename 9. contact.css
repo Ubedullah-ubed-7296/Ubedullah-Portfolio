@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.contactform{
+    /* padding-top: 80px; */
+    padding-right: 50px;
+    margin: 90px 20px;
+    margin-bottom: 60px;
+}
+
+form{
+    margin-top: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform h1{
+    /* padding: 12px 0; */
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contactform h1 span{
+    color: #59b2f4;
+}
+
+.contactform form div input{
+    color: white;
+}
+
+.contactform form textarea{
+    border-radius: 5px;
+    color: white;
+}
+
+.contactform .input-card input, .contactform textarea {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    margin: 0.7rem 0.5rem;
+}
+
+.contactform .input-card input {
+    width: 250px;
+}
+
+
+.contactform form div input,
+.contactform form textarea{
+    background-color: rgb(16 36 78);
+    color: white;
+    outline: none;
+    border: 2px solid rgb(94, 90, 84);
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+}
+
+.contactform form div input:focus,
+.contactform form textarea:focus{
+    border-color: #59b2f4; 
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-sm{
+    font-size: 14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+    border: 2px solid #59b2f4;
+}
+
+@media screen and (max-width: 710px) {
+    .contactform .input-card input {
+        width: 100%;
+    }
+
+    .contactform textarea{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .contactform h1 {
+        font-size: 2rem;
+    }
+    
+    .contactform h1 span {
+        font-size: 2rem;
+    }
+}
